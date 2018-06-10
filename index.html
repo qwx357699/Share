@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>分享星云链到社交平台</title>
+  <meta name="description" content="分享你的区块链Dapp或者邀请好友注册到社交平台">
+  <meta name="keywords" content="分享星云链到社交平台">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="assets/css/select2.css">
+
+
+  <link rel="stylesheet" href="assets/css/helpers.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="dist/css/share.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mloading.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">分享星云链到社交平台</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu" aria-controls="probootstrap-menu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span>
+          <i class="ion-navicon"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="probootstrap-menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#myindex">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#help">教程手册</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#linkus">联系我们</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+
+  <section id="myindex" class="probootstrap-cover overflow-hidden relative" style="background-image: url('assets/images/bg_1.jpg');"
+    data-stellar-background-ratio="0.5" id="section-home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md">
+          <h2 class="heading mb-2 display-4 font-light probootstrap-animate">分享你的区块链Dapp或者邀请好友注册到社交平台</h2>
+          <p class="lead mb-5 probootstrap-animate">
+          </p>
+          <a id="shareCount" href="#" role="button" class="btn btn-primary p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3">已经分享人数:</a>
+          </p>
+        </div>
+        <div class="col-md probootstrap-animate">
+          <form action="#" class="probootstrap-form">
+            <div class="form-group">
+              <div class="row mb-3">
+                <div class="col-md">
+                  <div class="form-group">
+                    <label for="id_label_single" style="width: 100%;">
+                      <input type="text" class="form-control" id="myurl" placeholder="分享网址" required/>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row mb-3">
+                  <div class="col-md">
+                    <div class="form-group">
+                      <label for="id_label_single" style="width: 100%;">
+                        <input type="text" class="form-control" id="myfrom" placeholder="来源" required/>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row mb-3">
+                    <div class="col-md">
+                      <div class="form-group">
+                        <label for="id_label_single" style="width: 100%;">
+                          <input type="text" class="form-control" id="mytitle" placeholder="标题" required/>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row mb-3">
+                      <div class="col-md">
+                        <div class="form-group">
+                          <label for="id_label_single" style="width: 100%;">
+                            <input type="text" class="form-control" id="mypicurl" placeholder="图片地址" required/>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row mb-3">
+                        <div class="col-md">
+                          <div class="form-group">
+                            <label for="id_label_single" style="width: 100%;">
+                              <textarea id="mydesc" class="form-control" rows="3" placeholder="描述"></textarea>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- END row -->
+                      <div class="row">
+                        <div class="col-md">
+                          <input type="button" value="创建分享链接" class="btn btn-primary btn-block" onclick="confimInfo()">
+                        </div>
+                      </div>
+                      <div class="myshare"></div>
+                    </div>
+          </form>
+          </div>
+          </div>
+          </div>
+
+  </section>
+
+
+  <section id="help" class="probootstrap_section" id="section-feature-testimonial">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-12 text-center mb-5 probootstrap-animate">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">教程手册</h2>
+          <blockquote class="">
+            <p class="lead mb-4">
+              <em>第一步，使用Chrome浏览器星云链钱包插件下载安装，移动端需要安装星云链app下载地址：
+                <a href="https://github.com/nebulasio/WebExtensionWallet" target="_blank">Chrome钱包插件</a> 链接中有安装教程，目前仅支持chrome。 移动端app下载地址：
+                <a href="https://nano.nebulas.io/index_cn.html" target="_blank">星云链App</a>
+              </em>
+            </p>
+            <p class="lead mb-4">
+              <em>第二步，填写本站要求填写的信息，点击创建分享链接，等待区块链返回成功提示。</em>
+            </p>
+            <p class="lead mb-4">
+              <em> 第三步，可以把你需要的内容分享到各种社交平台，吸引更多的朋友前来围观。</em>
+            </p>
+            <p>
+              <h4>说明：星云生态拓展激励计划。</h4>
+              <br/>首先推广者在星云官网注册成为星云社区用户，并获得自己独有的邀请码与邀请链接；推广者利用邀请链接和邀请码进行推广，其他用户可以直接通过其分享的邀请码和邀请链接在星云官网注册成为新用户，注册成功后，推广者即可获得奖励。
+              而进入拉新数量排名前20的推广者，则成为超级贡献者，有机会分享超级贡献者奖当周的奖金，并获得DApp评选专属投票特权。星云团队表示，任何人都可以无门槛参与。欢迎通过线上线下等各种渠道，吸引更多的人注册成为星云社区用户。
+
+              <br/> 谈完人生，再来谈下超级贡献者的奖金分配。
+
+              <br/> 上面提到，每周拉新数量最多的前20名推广者成为超级贡献者，既分享拉新奖金，又获得优秀DApp投票权，既有钱，又有权。举个栗子：
+
+              <br/> 前20名超级贡献者总计拉来了10000名用户，那么每名用户可以为其邀请人带来1NAS的奖金，如果其中第一名拉来3000人，第二名2000，第三名800，那么第一名将获得3000NAS的奖励，第二名2000NAS，第三名800NAS。
+
+              <br/> 另外需要超级贡献者注意的是：为了保证后续投票的延续性，每周的拉新奖金，不会立即发放。而是待该周最终结果揭晓之后，和该周其它奖励（开发者奖励和推广者返利）一同发放。
+
+            </p>
+          </blockquote>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section id="linkus" class="probootstrap_section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-12 text-center mb-5 probootstrap-animate">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">联系我们</h2>
+          <blockquote class="">
+            <p class="lead mb-4">
+              开发者：zuiyuewentian
+            </p>
+            <p class="lead mb-4">
+              联系邮箱：zuiyuewentian@163.com
+            </p>
+            <p class="lead mb-4">
+              qq:284965720
+            </p>
+
+          </blockquote>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END section -->
+
+  <footer class="probootstrap_section probootstrap-border-top">
+    <div class="container">
+
+      <div class="row pt-5">
+        <div class="col-md-12 text-center">
+          <p class="probootstrap_font-14">&copy; 2018. All Rights Reserved.
+            <br> Designed &amp; Developed by
+            <a href="#">ProBootstrap</a>
+            <small></small> - Writer from
+            <a href="http://chencblog.top" title="zuiyuewentian" target="_blank">zuiyuewentian</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="dist/js/jquery.share.min.js"></script>
+  <script type="text/javascript" src="dist/nebulas.js"></script>
+  <script type="text/javascript" src="dist/nebPay.js"></script>
+  <script type="text/javascript" src="js/createguid.js"></script>
+  <script type="text/javascript" src="js/jquery.mloading.js"></script>
+  <script>
+    "use strict";
+    var commonClass = new CommonClass();
+    var dappContactAddress = commonClass.GetAddress;
+    var nebulas = require("nebulas"), Account = Account, neb = new nebulas.Neb();
+    neb.setRequest(new nebulas.HttpRequest(commonClass.GetNetName));
+    var NebPay = require("nebpay");
+    var nebPay = new NebPay();
+    var serialNumber;
+    $(function () {
+     
+      bindDataCount();
+    });
+
+    function showLoading() {
+      $("body").mLoading({
+        text: "等待查询区块链执行结果",//加载文字，默认值：加载中...  
+        html: false,//设置加载内容是否是html格式，默认值是false  
+        content: "",//忽略icon和text的值，直接在加载框中显示此值  
+        mask: true//是否显示遮罩效果，默认显示  
+      });
+    }
+
+    function hideLoading() {
+      $("body").mLoading("hide");//隐藏loading组件
+    }
+
+    //绑定分享过的次数
+    function bindDataCount() {
+
+      var from = dappContactAddress;
+      var postmarkCode = guid();
+      var value = "0";
+      var nonce = "0";
+      var gas_price = "1000000";
+      var gas_limit = "2000000";
+      var callFunction = "sizeLength";
+      var callArgs = "";
+      var contract = {
+        "function": callFunction,
+        "args": callArgs
+      }
+
+      neb.api.call(from, dappContactAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+        var result = resp.result;
+        console.log('sss' + result);
+        if (result === 'null') {
+          return;
+        }
+        $("#shareCount").text("已经分享人数:"+result);
+      }).catch(function (err) {
+        
+        console.log("error :" + err.message);
+      })
+    }
+
+    var intervalQuery;
+    //创建
+    function confimInfo() {
+      var myurl = $("#myurl").val();
+      var myfrom = $("#myfrom").val();
+      var mytitle = $("#mytitle").val();
+      var mypicurl = $("#mypicurl").val();
+      var mydesc = $("#mydesc").val();
+      if (!myurl) {
+        alert("分享网址不能为空！");
+        return;
+      }
+      if (!myfrom) {
+        alert("来源不能为空！");
+        return;
+      }
+      if (!mytitle) {
+        alert("标题不能为空！");
+        return;
+      }
+      if (!mypicurl) {
+        alert("图片地址不能为空！");
+        return;
+      }
+      if (!mydesc) {
+        alert("描述不能为空！");
+        return;
+      }
+
+      var from = dappContactAddress;
+      var postmark = guid();
+      var date = GetNowDate();
+      var value = "0";
+      var nonce = "0";
+      var gas_price = "1000000";
+      var gas_limit = "2000000";
+      var callFunction = "addShare";
+      var callArgs = "[\"" + postmark + "\",\"" + myurl + "\",\"" + myfrom + "\",\"" + mytitle + "\",\"" + mydesc + "\",\"" + mypicurl + "\",\"" + date + "\"]";
+      console.log("callArgs:" + callArgs);
+      var serialNumber = nebPay.call(from, value, callFunction, callArgs, {
+        listener: function (resp) {
+          showLoading();
+          intervalQuery = setInterval(function () {
+            funcIntervalQuery(resp.txhash);
+          }, 3000);
+        }
+      });
+    }
+
+    function funcIntervalQuery(txhash) {
+      receiptTransaction(txhash).then(function (resp) {
+        var respObject = resp;
+        console.log(respObject);
+        if (respObject.status == 1) {
+          clearInterval(intervalQuery);
+          hideLoading();
+          var myurl = $("#myurl").val();
+          var myfrom = $("#myfrom").val();
+          var mytitle = $("#mytitle").val();
+          var mypicurl = $("#mypicurl").val();
+          var mydesc = $("#mydesc").val();
+          var config = {
+            url: myurl, // 网址，默认使用 window.location.href
+            source: myfrom, // 来源（QQ空间会用到）, 默认读取head标签：<meta name="site" content="http://overtrue" />
+            title: mytitle, // 标题，默认读取 document.title 或者 <meta name="title" content="share.js" />
+            description: mydesc, // 描述, 默认读取head标签：<meta name="description" content="PHP弱类型的实现原理分析" />
+            image: mypicurl, // 图片, 默认取网页中第一个img标签
+            wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
+            wechatQrcodeHelper: '<div style="line-height:10px;"><a>微信里点“发现”，扫一下</a><a>二维码便可将本文分享至朋友圈。</a></div>',
+          };
+          $('.myshare').share(config);
+          alert("创建分享链接成功！请点击下面的分享图标分享你的信息到社交平台吧");
+        } else if (respObject.status == 0) {
+          hideLoading();
+          ShowDiv("创建出错,请检测是否已经签字或者网络出错");
+        }
+      }).catch(function (err) {
+        clearInterval(intervalQuery);
+        hideLoading();
+        alert("创建失败！");
+      })
+    }
+
+    var receiptTransaction = function (txhash) {
+      var promise = new Promise(function (resolve, reject) {
+        neb.api.getTransactionReceipt(txhash).then(function (resp) {
+          resolve(resp);
+        }).catch(function (err) {
+          console.log(err);
+        });
+      });
+      return promise
+    }
+
+
+  </script>
+
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+
+  <script src="assets/js/bootstrap-datepicker.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+
+  <script src="assets/js/select2.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
